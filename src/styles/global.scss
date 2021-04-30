@@ -1,0 +1,38 @@
+@use './design-system.scss' as ds;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (ds.$tablet) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (ds.$mobile) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+
+body {
+  background: ds.$white-100;
+  color: ds.$blue-100;
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem Ubuntu, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
