@@ -1,0 +1,39 @@
+@use '../design-system.scss' as ds;
+@import '../functions.scss';
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+    a {
+      font-size: toRem(14);
+      font-weight: normal;
+      color: ds.$gray-800;
+      transition: 0.3s linear 0s;
+      padding: 8px 16px;
+      border-radius: 4px;
+
+      & + a {
+        margin-left: 8px;
+      }
+
+      &:hover {
+        color: ds.$blue-500;
+        cursor: pointer;
+        background: opacity30(ds.$blue-500);
+      }
+    }
+  }
+}

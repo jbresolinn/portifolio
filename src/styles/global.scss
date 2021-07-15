@@ -1,4 +1,5 @@
 @use './design-system.scss' as ds;
+@import './functions.scss';
 
 * {
   margin: 0;
@@ -21,11 +22,11 @@
 
 body {
   background: ds.$white-100;
-  color: ds.$blue-100;
+  color: ds.$gray-600;
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem Ubuntu, sans-serif;
+  font: 400 toRem(ds.$default-fontsize) Ubuntu, sans-serif;
 }
 
 button {

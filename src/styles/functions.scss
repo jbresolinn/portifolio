@@ -1,0 +1,13 @@
+@use './design-system.scss' as ds;
+
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function toRem($size) {
+  @return #{stripUnit($size) / stripUnit(ds.$default-fontsize)}rem;
+}
+
+@function opacity30($color) {
+  @return rgba($color, 10%);
+}

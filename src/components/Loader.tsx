@@ -19,7 +19,13 @@ export const Loader = () => {
     <motion.div
       className={styles.container}
       initial={{ backgroundColor: '#384EDD', opacity: 1 }}
-      animate={{ backgroundColor: '#E9EBF0', opacity: 0 }}
+      animate={{
+        backgroundColor: '#E9EBF0',
+        opacity: 0,
+        transitionEnd: {
+          display: 'none'
+        }
+      }}
       transition={{ duration: 0.3, ease: 'easeOut', delay: 2.8 }}
     >
       <motion.div
