@@ -6,9 +6,12 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
 
-          <link rel="icon" href="favicon.png" type="image/png"/>
+          <link rel="icon" href="favicon.ico" type="image/ico" />
         </Head>
         <body>
           <Main />
@@ -16,5 +19,5 @@ export default class MyDocument extends Document {
         </body>
       </Html>
     )
-  } 
+  }
 }
